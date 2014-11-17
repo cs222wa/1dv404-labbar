@@ -41,11 +41,13 @@ namespace RaknaSiffror
                 }
                 if (!IsOdd(c))
                 {
-                    if (c == 0)
+                    if (c == '0')
                     {
                         zeroList.Add(c); //Add character to zeroList
                     }
+                    else { 
                     evenList.Add(c);    //Add character to evenList 
+                    }
                 }
             }
 
