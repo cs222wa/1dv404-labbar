@@ -10,45 +10,44 @@ namespace RaknaSiffror
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Var god ange 10 siffror.");
-
-            int[] input = new int[10]; // Tar emot siffror frn användare
-            for (int i = 0; i < 10; i++)
-            {
-                input[i] = int.Parse(Console.ReadLine());
-                if (IsOdd(input[i]))
-                {
-                    Console.WriteLine("Siffran {0} är ojämn", input[i]);
-                }
-                if (!IsOdd(input[i]))
-                {
-                    Console.WriteLine("Siffran {0} är jämn", input[i]);
-                }
-            }
-        }
-            public static bool IsOdd(int value)
-            {
-	        return value % 2 != 0;
-            }
-            
-
-            //int odd;
-            //int even;
-
-            //if (isOdd(input)) ;      //Om siffran är ojämn skriv ut antalet
-            //{
-            //}
-            //if (!isOdd(input)) ;    //Om siffran är jämn skriv ut antalet
-            //{
-            //}
-
-
-
-
-            // kriv ett program RaknaSiffror som för ett godtyckligt positivt heltal N (läses in från 
+            // Skriv ett program RaknaSiffror som för ett godtyckligt positivt heltal N (läses in från 
             // tangentbordet) skriver ut antalet nollor, antalet udda siffror och antalet jämna siffror. En 
             // körning kan se ut enligt följande: 
             // Mata in ett heltal: 6789500 Nollor: 2 Udda: 3 Jämna: 2
+
+            string input = Console.ReadLine(); //Recieve input from user
+            //Create new array for Odd numbers
+            //Create new array for even numbers
+            //Create new array for zeros
+
+            foreach (char c in input)   
+            {
+                //Convert characters to int 
+                //Add the characters to array based on if they are even or odd.
+                //        if (IsOdd(input[i]))
+                //        {
+                //            //Add to oddArr
+                //        }
+                //        if (!IsOdd(input[i]))
+                //        {
+                //            Add to evenArr
+                //        }
+                //         if (input[i] == 0)
+                //        {
+                //            Add to zeroArr
+                //        }
+            }
+
+            Console.WriteLine(); //Write out the length of the array for odd numbers.
+            Console.WriteLine(); //Write out the length of the array for even numbers.
+
+
+            //   }
+            //    public static bool IsOdd(int value)
+            //    {
+            //    return value % 2 != 0;
+            //    }
+
         }
     }
-
+}
