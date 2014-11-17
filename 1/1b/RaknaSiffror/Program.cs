@@ -10,51 +10,41 @@ namespace RaknaSiffror
     {
         static void Main(string[] args)
         {
-            // Skriv ett program RaknaSiffror som för ett godtyckligt positivt heltal N (läses in från 
-            // tangentbordet) skriver ut antalet nollor, antalet udda siffror och antalet jämna siffror. En 
-            // körning kan se ut enligt följande: 
-            // Mata in ett heltal: 6789500 Nollor: 2 Udda: 3 Jämna: 2
-
+            Console.WriteLine("Var god ange ett tal.");
             string newString = Console.ReadLine(); //Recieve input from user
-
-            //List<int> input = new List<int>(newString.Length);
             List<int> oddList = new List<int>();
             List<int> evenList = new List<int>();
             List<int> zeroList = new List<int>();
 
-            //Convert characters to int 
-            int value = int.Parse(newString);
-
-            foreach (char c in newString)   
+            for (int i = 0; i < newString.Length; i++)
             {
-                
-
-
-                //Add the characters to list based on if they are even or odd.
-                //        if (IsOdd(input[i]))
-                //        {
-                //            //Add to oddList
-                //        }
-                //        if (!IsOdd(input[i]))
-                //        {
-                //            Add to evenList
-                //        }
-                //         if (input[i] == 0)
-                //        {
-                //            Add to zeroList
-                //        }
+                if (IsOdd(i))
+                {
+                    oddList.Add(i);     //Add character to oddList
+                }
+                if (!IsOdd(i))
+                {
+                    if (i == 0)
+                    {
+                        zeroList.Add(i); //Add character to zeroList
+                    }
+                    else
+                    {
+                        evenList.Add(i);    //Add character to evenList
+                    }
+                }
             }
+            Console.WriteLine("Antal nollor: {0}", zeroList.Count); //Write out the length of the list for zeroes.
+            Console.WriteLine("Antal udda siffor: {0}", oddList.Count); //Write out the length of the list for odd numbers.
+            Console.WriteLine("Antal jämna siffor: {0}", evenList.Count); //Write out the length of the list for even numbers.
+        }
 
-            Console.WriteLine(); //Write out the length of the list for odd numbers.
-            Console.WriteLine(); //Write out the length of the list for even numbers.
-
-
-            //   }
-            //    public static bool IsOdd(int value)
-            //    {
-            //    return value % 2 != 0;
-            //    }
-
+        public static bool IsOdd(int value)
+        {
+            return value % 2 != 0;      //return true or false if the character is odd or even.
         }
     }
 }
+
+
+
