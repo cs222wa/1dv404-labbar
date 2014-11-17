@@ -12,11 +12,38 @@ namespace RaknaSiffror
         {
             Console.WriteLine("Var god ange ett tal.");
             string newString = Console.ReadLine(); //Recieve input from user
+            if (string.IsNullOrEmpty(newString))    //If string is empty an exception will be thrown and a message displayed.
+            {
+                try
+                {
+                    throw new ArgumentException(); 
+                }
+                catch (ArgumentException)
+                {
+                    Console.WriteLine("Du måste ange minst en siffra.");
+                    return;
+                }
+            }
+
+            foreach (char c in newString) //Loops through the characters in the string
+            {
+                if (Char.IsLetter(c)) //If string contains letters an exception will be thrown and a message displayed.
+                {
+                    try
+                    {
+                        throw new ArgumentException();
+                    }
+                    catch (ArgumentException)
+                    {
+                        Console.WriteLine("Raden måste bestå av siffror.");
+                        return;
+                    }
+                }
+            }
             List<int> oddList = new List<int>();
             List<int> evenList = new List<int>();
             List<int> zeroList = new List<int>();
-
-            for (int i = 0; i < newString.Length; i++)
+            for (int i = 0; i < newString.Length; i++)  //Loops through the content of the string
             {
                 if (IsOdd(i))
                 {
