@@ -10,57 +10,45 @@ namespace RaknaSiffror
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Var god ange ett tal.");
-            string newString = Console.ReadLine(); //Recieve input from user
-            if (string.IsNullOrEmpty(newString))    //If string is empty an exception will be thrown and a message displayed.
+            int newString;
+            string number;
+            while (true)
             {
                 try
                 {
-                    throw new ArgumentException(); 
+                    Console.Write("Var god ange ett tal att behandla: ");
+                    newString = int.Parse(Console.ReadLine()); //Recieve input from user
+                    break;
                 }
-                catch (ArgumentException)
+                catch (FormatException)
                 {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine("Du måste ange minst en siffra.");
-                    return;
+                    Console.ResetColor();
                 }
             }
-
-            foreach (char c in newString) //Loops through the characters in the string
-            {
-                if (Char.IsLetter(c)) //If string contains letters an exception will be thrown and a message displayed.
-                {
-                    try
-                    {
-                        throw new ArgumentException();
-                    }
-                    catch (ArgumentException)
-                    {
-                        Console.WriteLine("Raden måste bestå av siffror.");
-                        return;
-                    }
-                }
-            }
+            number = newString.ToString();
             List<int> oddList = new List<int>();
             List<int> evenList = new List<int>();
             List<int> zeroList = new List<int>();
-            for (int i = 0; i < newString.Length; i++)  //Loops through the content of the string
+            
+            foreach (char c in number)  //Loops through the content of the string
             {
-                if (IsOdd(i))
+                if (IsOdd(c))
                 {
-                    oddList.Add(i);     //Add character to oddList
+                    oddList.Add(c);     //Add character to oddList
                 }
-                if (!IsOdd(i))
+                if (!IsOdd(c))
                 {
-                    if (i == 0)
+                    if (c == 0)
                     {
-                        zeroList.Add(i); //Add character to zeroList
+                        zeroList.Add(c); //Add character to zeroList
                     }
-                    else
-                    {
-                        evenList.Add(i);    //Add character to evenList
-                    }
+                    evenList.Add(c);    //Add character to evenList 
                 }
             }
+
             Console.WriteLine("Antal nollor: {0}", zeroList.Count); //Write out the length of the list for zeroes.
             Console.WriteLine("Antal udda siffor: {0}", oddList.Count); //Write out the length of the list for odd numbers.
             Console.WriteLine("Antal jämna siffor: {0}", evenList.Count); //Write out the length of the list for even numbers.
