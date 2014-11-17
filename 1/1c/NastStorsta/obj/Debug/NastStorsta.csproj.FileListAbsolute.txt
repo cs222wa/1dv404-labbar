@@ -1,0 +1,6 @@
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1c\NastStorsta\bin\Debug\NastStorsta.exe.config
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1c\NastStorsta\bin\Debug\NastStorsta.exe
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1c\NastStorsta\bin\Debug\NastStorsta.pdb
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1c\NastStorsta\obj\Debug\NastStorsta.csprojResolveAssemblyReference.cache
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1c\NastStorsta\obj\Debug\NastStorsta.exe
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1c\NastStorsta\obj\Debug\NastStorsta.pdb
