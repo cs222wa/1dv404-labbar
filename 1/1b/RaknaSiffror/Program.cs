@@ -15,31 +15,38 @@ namespace RaknaSiffror
             // körning kan se ut enligt följande: 
             // Mata in ett heltal: 6789500 Nollor: 2 Udda: 3 Jämna: 2
 
-            string input = Console.ReadLine(); //Recieve input from user
-            //Create new array for Odd numbers
-            //Create new array for even numbers
-            //Create new array for zeros
+            string newString = Console.ReadLine(); //Recieve input from user
 
-            foreach (char c in input)   
+            //List<int> input = new List<int>(newString.Length);
+            List<int> oddList = new List<int>();
+            List<int> evenList = new List<int>();
+            List<int> zeroList = new List<int>();
+
+            //Convert characters to int 
+            int value = int.Parse(newString);
+
+            foreach (char c in newString)   
             {
-                //Convert characters to int 
-                //Add the characters to array based on if they are even or odd.
+                
+
+
+                //Add the characters to list based on if they are even or odd.
                 //        if (IsOdd(input[i]))
                 //        {
-                //            //Add to oddArr
+                //            //Add to oddList
                 //        }
                 //        if (!IsOdd(input[i]))
                 //        {
-                //            Add to evenArr
+                //            Add to evenList
                 //        }
                 //         if (input[i] == 0)
                 //        {
-                //            Add to zeroArr
+                //            Add to zeroList
                 //        }
             }
 
-            Console.WriteLine(); //Write out the length of the array for odd numbers.
-            Console.WriteLine(); //Write out the length of the array for even numbers.
+            Console.WriteLine(); //Write out the length of the list for odd numbers.
+            Console.WriteLine(); //Write out the length of the list for even numbers.
 
 
             //   }
