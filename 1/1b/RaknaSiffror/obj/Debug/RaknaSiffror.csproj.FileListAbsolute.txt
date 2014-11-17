@@ -1,1 +1,6 @@
 C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1b\RaknaSiffror\bin\Debug\RaknaSiffror.exe.config
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1b\RaknaSiffror\bin\Debug\RaknaSiffror.exe
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1b\RaknaSiffror\bin\Debug\RaknaSiffror.pdb
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1b\RaknaSiffror\obj\Debug\RaknaSiffror.csprojResolveAssemblyReference.cache
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1b\RaknaSiffror\obj\Debug\RaknaSiffror.exe
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1b\RaknaSiffror\obj\Debug\RaknaSiffror.pdb
