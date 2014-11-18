@@ -21,22 +21,20 @@ namespace NastStorsta
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            //int repetition = 1;
-            int amount;
-            int input;
-            int greatestNumber = int.MinValue;
+            int amount;                         //Variable for the amount of numbers the user want to calculate.
+            int input;                          //Variable for the users input of numbers.
+            int greatestNumber = int.MinValue;      //Value for Greatest & secondGreatest number set to minimum value for an integer.
             int secondGreatestNumber = int.MinValue;
-
             while (true)
             {
                 try
                 {
                     Console.WriteLine("Hur många heltal vill du mata in?");
-                    amount = int.Parse(Console.ReadLine());
+                    amount = int.Parse(Console.ReadLine());         //The amount of numbers to be inserted is set by user.
                     Console.WriteLine("-------------------------");
                     break;
                 }
-                catch (FormatException)
+                catch (FormatException)     //If an error occurs a message will be displayed.
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
                     Console.ForegroundColor = ConsoleColor.White;
@@ -44,73 +42,34 @@ namespace NastStorsta
                     Console.ResetColor();
                 }
             }
-
             Console.WriteLine("Var god ange dina heltal.");
             Console.WriteLine();
-            string number = Console.ReadLine();
-            for (int i = 1; i < amount; i++)
+            for (int i = 0; i < amount; i++)    //Loops through the numbers inserted by user.
             {
-                while(true)
+                while (true)
                     try
                     {
-                        input = int.Parse(Console.ReadLine());
+                        input = int.Parse(Console.ReadLine());      //Value for input (numbers) is set by user.
                         break;
                     }
-                catch (Exception)
+                    catch (Exception)
                     {
-                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.BackgroundColor = ConsoleColor.Red;     //If input is faulty a message will be displayed.
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine("Det angivna talet kan inte tolkas som ett heltal.");
                         Console.ResetColor();
                     }
-                if (input > greatestNumber)
+                if (input > greatestNumber)        //If the input value is greater than the value of the current greatest number...
                 {
-                    secondGreatestNumber = greatestNumber;
-                    greatestNumber = input;
+                    secondGreatestNumber = greatestNumber;  //... the value of the current greatest number will be redirected to be the second greatest number.
+                    greatestNumber = input;                 //and the user input value will be set as the greatest number.
                 }
-                else if (input > secondGreatestNumber)
-                {
+                else if (input > secondGreatestNumber)      //If the input is bigger than the second greatest number, but NOT bigger than the greatest number
+                {                                           //its value will be replaced by the value of input.
                     secondGreatestNumber = input;
                 }
-
             }
-
-            Console.WriteLine("Det näst största talet är {0}.", secondGreatestNumber);
-
-
-
-
-
-
-            
-                       
-
-            //for (int i = 0; i < number.Length; i++)
-            //{
-            //    while (true)
-            //    {
-            //        try
-            //        {
-            //            if(number == "")
-            //            {
-            //                Console.WriteLine("mellanslag");
-            //            }
-
-
-
-
-            //            break;
-            //        }
-            //        catch (FormatException)
-            //        {
-            //            Console.BackgroundColor = ConsoleColor.Red;
-            //            Console.ForegroundColor = ConsoleColor.White;
-            //            Console.WriteLine("Du måste ange dina heltal med siffror.");
-            //            Console.ResetColor();
-            //        }
-            //    }
-            //    //Console.WriteLine(number);
-            //}
+            Console.WriteLine("Det näst största talet är {0}.", secondGreatestNumber);      //the second greatest number will be presented.
         }
     }
 }
