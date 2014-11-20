@@ -4,3 +4,6 @@ C:\Users\Carolina\Documents\Skola\Iterativ Mjukvaruutveckling\Labb 1\1\1a\RaknaA
 C:\Users\Carolina\Documents\Skola\Iterativ Mjukvaruutveckling\Labb 1\1\1a\RaknaA\obj\Debug\RaknaA.csprojResolveAssemblyReference.cache
 C:\Users\Carolina\Documents\Skola\Iterativ Mjukvaruutveckling\Labb 1\1\1a\RaknaA\obj\Debug\RaknaA.exe
 C:\Users\Carolina\Documents\Skola\Iterativ Mjukvaruutveckling\Labb 1\1\1a\RaknaA\obj\Debug\RaknaA.pdb
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1a\RaknaA\bin\Debug\RaknaA.exe.config
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1a\RaknaA\obj\Debug\RaknaA.exe
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\1\1a\RaknaA\obj\Debug\RaknaA.pdb
