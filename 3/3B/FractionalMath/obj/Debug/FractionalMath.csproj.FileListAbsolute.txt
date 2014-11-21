@@ -1,1 +1,6 @@
 C:\Users\Carolina\Documents\GitHub\1dv404\labb1\3\3B\FractionalMath\bin\Debug\FractionalMath.exe.config
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\3\3B\FractionalMath\bin\Debug\FractionalMath.exe
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\3\3B\FractionalMath\bin\Debug\FractionalMath.pdb
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\3\3B\FractionalMath\obj\Debug\FractionalMath.csprojResolveAssemblyReference.cache
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\3\3B\FractionalMath\obj\Debug\FractionalMath.exe
+C:\Users\Carolina\Documents\GitHub\1dv404\labb1\3\3B\FractionalMath\obj\Debug\FractionalMath.pdb
