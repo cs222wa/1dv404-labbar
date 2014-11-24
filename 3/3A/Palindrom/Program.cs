@@ -10,6 +10,8 @@ namespace Palindrom
     /// Skriv ett program Palindrom som testar om en textrad (läses in från tangentbordet, enbart 
     ///små bokstäver) är ett palindrom, dvs, att textraden har samma sekvens av bokstäver vare sig 
     ///man läser den framifrån eller bakifrån. Ge några exempel som testar funktionaliteten.
+    ///Exempel på palindrom: alla, anna, sirap i paris.
+    ///Exempel som inte är palindrom: rolig, hej, världen.
     /// </summary>
     class Program
     {
